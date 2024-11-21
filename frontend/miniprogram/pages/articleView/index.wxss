@@ -1,0 +1,91 @@
+/* pages/articleView/index.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+}
+
+page {
+  padding-top: 54rpx;
+  background-color: #f6f6f6;
+  padding-bottom: 60rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  margin-left: 10px;
+  align-items: center;
+}
+
+.content-text {
+  color: black;
+}
+
+.table-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 350px; /* Adjust the max-width value as per your requirement */
+  flex: 1;
+}
+
+.header {
+  margin-top: 10px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+/* Search bar */
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 330px;
+}
+
+.search-bar {
+  padding: 0 10px;
+  border: none;
+  background: none;
+  flex-basis: 75%;
+}
+
+.search-button {
+  background-color: #ee0000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  flex-basis: 25%;
+}
+
+.search-button:active {
+  /* Add your desired CSS properties here */
+  /* For example, changing the background color and box shadow */
+  background-color: #cc0000;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Possible tickers table */
+
+.possib-container {
+  margin-top: 0px; /* Adjust the margin as needed */
+}
+
+.possib-row {
+  display: flex;
+  margin-top: 10px;
+}

@@ -1,0 +1,78 @@
+/* Search bar */
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.search-row {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 330px;
+}
+
+.search-bar {
+  padding: 0 10px;
+  border: none;
+  background: none;
+  flex-basis: 75%;
+}
+
+.search-button {
+  background-color: #ee0000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-left: 5px;
+  flex-basis: 25%;
+}
+
+.search-button:active {
+  /* Add your desired CSS properties here */
+  /* For example, changing the background color and box shadow */
+  background-color: #cc0000;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Comment display list */
+
+.list-container {
+  
+}
+
+.table-row {
+  border-bottom: 1px solid #c0c0c0;
+}
+
+.table-row-sect {
+  display: flex;
+}
+
+.table-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 350px; /* Adjust the max-width value as per your requirement */
+  flex: 1;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Possible tickers table */
+
+.possib-container {
+  margin-top: 0px; /* Adjust the margin as needed */
+}
+
+.possib-row {
+  display: flex;
+  margin-top: 10px;
+}

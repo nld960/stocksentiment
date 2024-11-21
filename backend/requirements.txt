@@ -1,0 +1,6 @@
+flask==2.3.2
+flask-mysqldb
+python-dotenv==1.0.0
+mysql-connector-python
+bs4==0.0.1
+selenium==4.1.2

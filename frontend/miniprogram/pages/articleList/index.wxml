@@ -1,0 +1,34 @@
+<!--pages/articleList/index.wxml-->
+<view class="container">
+  <!--Search bar-->
+  <view class="search-container">
+    <view class="search-row">
+      <input class="search-bar" placeholder=" 请输入股票代码/股票名称" bindinput="handleInputChange" />
+      <button class="search-button" bindtap="handleSearch">搜索</button>
+    </view>
+    <view class="possib-container" wx:for="{{possibilities}}" wx:for-item="stock">
+      <view class="possib-row" bindtap="handleSelect" data-arg="{{stock.ticker}}">
+        ${{stock.name}}({{stock.ticker}})$
+      </view>
+      <!-- Add more table rows as needed -->
+    </view>
+  </view>
+
+  <!--Comment list-->
+  <view class="list-container">
+    <view wx:for="{{list}}" wx:key="time" wx:for-item="item">
+      <view class="table-row">
+        <view class="table-row-sect" style="margin-top: 10px;">
+          <view class="table-cell" style="flex-basis: 45%; font-weight: bold;">{{item.author}}</view>
+          <view class="table-cell" style="flex-basis: 25%; text-align: right; margin-right: 10px;">{{item.from}}</view>
+          <view class="table-cell" style="flex-basis: 30%; text-align: right; margin-right: 10px;">{{item.time}}</view>
+        </view>
+        <view class="table-row-sect" style="margin-bottom: 10px;">
+          <navigator class="table-cell link" url="/pages/articleView/index?url={{item.link}}&author={{item.author}}&time={{item.time}}&from={{item.from}}" open-type="navigateTo">
+            {{item.heading}}
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
